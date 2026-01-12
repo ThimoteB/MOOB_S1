@@ -507,14 +507,14 @@ if (item instanceof Sword) {
 flowchart LR
     subgraph Code
         var["Item item = new Sword()"]
-        call["item.render()"]
+        methodCall["item.render()"]
     end
     
     subgraph Runtime["Exécution"]
         actual["→ Sword.render()"]
     end
     
-    call --> actual
+    methodCall --> actual
     
     style actual fill:#c8e6c9
 ```
